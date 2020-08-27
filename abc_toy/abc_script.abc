@@ -1,0 +1,7 @@
+source "/home/albertlu/Desktop/tool/abc/abc.rc"
+read_blif ./input_blif/c7552.blif
+read_library mcnc1_nor2.genlib
+strash
+resyn
+map
+write_verilog ./netlist/c7552.v

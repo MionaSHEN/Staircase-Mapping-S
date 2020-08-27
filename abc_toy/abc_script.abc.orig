@@ -1,0 +1,9 @@
+source "/home/albertlu/Desktop/tool/abc/abc.rc"
+read_blif c6288.blif
+read_library mcnc1_nor2.genlib
+strash
+resyn
+resyn2
+resyn2rs
+map -a
+write_verilog abc_output.v
